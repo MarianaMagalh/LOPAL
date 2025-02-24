@@ -65,7 +65,78 @@ print("-----------------------------------------------------------------")
 # exercicio 9
 # calcular resultado e o resto da divisão do dividendo e o divisor, exibir tudo!
 print("Dividendo e Divisor")
+dividendo = int(input("Digite o primeiro valor a ser dividido: "))
+divisor = int(input("Digite o segundo valor a ser divisor: "))
+
+resto = dividendo % divisor
+resultado = dividendo // divisor
+
+print(f"Dividendo: {dividendo} e divisor: {divisor}")
+print(f"Calculo: {dividendo} / {divisor} = {resultado}")
+print(f"Resto da divisão: {resto}")
+print("-----------------------------------------------------------------")
+
+# exercicio 10
+# conversão de temperaturas, celsius para fahrenheit
+print("Celsius para Fahrenheit!")
+cel = int(input("Insira a temperatura em graus Celsius: "))
+
+fahr = cel * 1.8 + 32
+
+print(f"A temperatura {cel}C° em Fahrenheit é {fahr}F°.")
+print("-----------------------------------------------------------------")
+
+# exercicio 11
+# calculo do imc
+print("IMC!")
+peso = float(input("Insira o seu pseo(kg): "))
+alt = float(input("Insira a sua altura(m): "))
+
+imc = peso / (alt ** 2)
+# o uso dos caracter ":,.Xf", foi para delimitar o número de casas decimais
+print(f"O seu IMC é {imc:,.4f}.")
+print("-----------------------------------------------------------------")
+
+# exercicio 12
+# calculo da media ponderada, notas com pesos diferentes
+print("Média Ponderada!")
+not1 = int(input("Insirá a primeira nota: "))
+not2 = int(input("Insirá a segunda nota: "))
+not3 = int(input("Insirá a terceira nota: "))
+
+ps1 = int(input("Qual o peso da primeira nota? "))
+ps2 = int(input("Qual o peso da segunda nota? "))
+ps3 = int(input("Qual o peso da terceira nota? "))
+
+meP = (not1 * ps1 + not2 * ps2 + not3 * ps3)/(ps1 + ps2 + ps3)
+
+print(f"A média ponderada é {meP}.")
+print("-----------------------------------------------------------------")
+
+# exercicio 13
+# calculo da potencia de um número inteiro elevado a um expoente
+print("Calculo da Potência!")
 
 
+print("-----------------------------------------------------------------")
 
+# desafio 1
+# calculo da raiz cúbica de um número
+print("Raiz Cúbica!")
+valor = int(input("Digite um número: "))
+raz = valor ** (1/3)
+print(f"A raiz cúbida de {valor} é {raz}.")
+print("-----------------------------------------------------------------")
 
+# desafio 2
+# calculo após um periodo de tempo com juros
+capi = int(input("Quanto é o capital: "))
+juros = float(input("Insira o juros: "))
+temp = int(input("Insira o tempo: "))
+# calculo do montante final
+rest = capi * (1 + juros)**temp
+print(f"O resultado final é de {rest:,.6f}.")
+
+print("-----------------------------------------------------------------")
+print("FIM DA LISTA DE EXERCICIO :)")
+print("-----------------------------------------------------------------")
