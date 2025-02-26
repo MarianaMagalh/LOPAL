@@ -115,9 +115,13 @@ print("-----------------------------------------------------------------")
 
 # exercicio 13
 # calculo da potencia de um número inteiro elevado a um expoente
-print("Calculo da Potência!")
+print("Pontência!")
+num = int(input("Insirá um número: "))
+expo = int(input("Insirá o expoente desse número: "))
 
+potencia = num ** expo
 
+print(f"A potência do {num} elevado à {expo} é {potencia}.")
 print("-----------------------------------------------------------------")
 
 # desafio 1
