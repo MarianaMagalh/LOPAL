@@ -119,9 +119,9 @@ print("Pontência!")
 num = int(input("Insirá um número: "))
 expo = int(input("Insirá o expoente desse número: "))
 
-potencia = num ** expo
+pote = num ** expo
 
-print(f"A potência do {num} elevado à {expo} é {potencia}.")
+print(f"A potência do {num} elevado à {expo} é {pote}.")
 print("-----------------------------------------------------------------")
 
 # desafio 1
