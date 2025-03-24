@@ -96,3 +96,24 @@ if hora >= 24 and hora < 0 and min >= 60 and seg >= seg:
     print("Horario Invalida!")
 else:
     print("Horario Valida!")
+#print("-------------------------------------------------------------------------------------------")
+
+notanum = int(input("Insira a nota do aluno: "))
+
+if notanum < 0 and notanum >= 10:
+    print("Nota invalida!\nInsira novamente.")
+else:
+    print("Nota valida!")
+
+notastg = str(notanum)
+
+if notastg >= '9' and notastg == '10':
+    print("A")
+elif notastg >= '7' and notastg <= '9':
+    print("B")
+elif notastg >= '5' and notastg <= '7':
+    print("C")
+elif notastg >= '3' and notastg <= '5':
+    print("D")
+else:
+    print("E")
