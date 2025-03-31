@@ -54,12 +54,12 @@ else:
 '''
 idade = int(input("Insira a sua idade: "))
 
-if idade < 18:
-    print("Voto Obrigatorio")
-elif idade >= 16 and idade <= 18 and idade >= 70:
+if idade >= 18 and idade <= 60:
+    print("Voto obrigatorio")
+elif idade <= 16 and idade < 18 or idade > 70:
     print("Voto Facultativo")
 else:
-    print("Voto Não Eleitor")
+    print("Não eleitor")
 '''
 
 #print("-------------------------------------------------------------------------------------------")
