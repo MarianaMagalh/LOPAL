@@ -68,10 +68,42 @@ print(f"O resultado de {num}! é {fatorial}")
 '''
 
 # ex 4
-num1 = int(input("Insira o primeiro valor: "))
-num2 = int(input("Insira o primeiro valor: "))
-num3 = int(input("Insira o primeiro valor: "))
+'''
+n = int(input("Digite o tamanho da lista: "))
+
+numeros = []
+contador = 0
+
+while contador < n:
+    numero = float(input("Digite um número: "))
+    numeros.append(numero)
+    contador += 1
+media = sum(numeros) / n
+print(f"A média dos numeros é {media}")
+'''
+
+# ex 5
+op = input("Digite qual operação vc quer usar")
+print("soma, subtração, multiplicação e divisão")
+
+num1 = int(input("Digite um número: "))
+num2 = int(input("Digite um número: "))
 
 i = 0
 
-while
+while op == 'soma' or op == 'subtração' or op == 'multiplicação' or 'divisão':
+    if op == 'soma':
+        soma = num1 + num2
+        print(f"Resultado: {soma}")
+    elif op == 'subtração':
+        sub = num1 - num2
+        print(f"Resultado: {sub}")
+    elif op == 'multiplicação':
+        multi = num1 * num2
+        print(f"Resultado: {multi}")
+    elif op == 'divisão':
+        div = num1 / num2
+        print(f"Resultado: {div}")
+    else:
+        print("Você saiu")
+
