@@ -7,7 +7,7 @@ soma = 0
 
 for _ in range(n):
     numero = float(input("Digite um número: "))
-    numeros.append(numero)
+    numeros.append(numero) # adição de um elemento no final da lista
     soma = soma + numero
 media = soma / n
 print(f"A média dos numeros é: {media}")
@@ -83,27 +83,107 @@ print(f"A média dos numeros é {media}")
 '''
 
 # ex 5
-op = input("Digite qual operação vc quer usar")
-print("soma, subtração, multiplicação e divisão")
+'''
+opcao = 0
 
-num1 = int(input("Digite um número: "))
-num2 = int(input("Digite um número: "))
+while opcao != 5:
+    print("Menu:")
+    print("1 - somar\n2 - subtrair\n3 - multiplicar\n4 - dividir\n5 - sair")
 
-i = 0
+    opcao = int(input("Escolha uma opcao: "))
 
-while op == 'soma' or op == 'subtração' or op == 'multiplicação' or 'divisão':
-    if op == 'soma':
-        soma = num1 + num2
-        print(f"Resultado: {soma}")
-    elif op == 'subtração':
-        sub = num1 - num2
-        print(f"Resultado: {sub}")
-    elif op == 'multiplicação':
-        multi = num1 * num2
-        print(f"Resultado: {multi}")
-    elif op == 'divisão':
-        div = num1 / num2
-        print(f"Resultado: {div}")
-    else:
-        print("Você saiu")
+    if opcao == 1:
+        num = float(input("digite o primeiro número: "))
+        num3 = float(input("digite o segundo número: "))
+
+        resul = num + num3
+        print(f"Resultado: {resul}")
+    elif opcao == 2:
+        num = float(input("digite o primeiro número: "))
+        num3 = float(input("digite o segundo número: "))
+
+        resul = num - num3
+        print(f"Resultado: {resul}")
+    elif opcao == 3:
+        num = float(input("digite o primeiro número: "))
+        num3 = float(input("digite o segundo número: "))
+
+        resul = num * num3
+        print(f"Resultado: {resul}")
+    elif opcao == 4:
+        num = float(input("digite o primeiro número: "))
+        num3 = float(input("digite o segundo número: "))
+
+        if num3 != 0:
+            resul = num / num3
+            print(f"Resultado: {resul:.2f}")
+        else:
+            print("Erro divisão por zero")
+    elif opcao == 5:
+        print("Saindo...")
+'''
+
+
+# while true - enquanto for verdadeiro, loop infinito que so para com o break, parando o while inteiro
+"""
+while True:
+    bloco a ser repetido
+    if condição:
+        break
+
+# exemplo 1
+while True:
+    resposta = input("digite 'sair' para encerrar: ")
+    if resposta == 'sair':
+        break
+        
+# comando continue - para o loop , ou pula
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+"""
+#  quando usar:
+# sei a condição de parada? = while condição
+# preciso repetir ate o usuario acertar algo? = while True + break
+# quero algo que nunca pare(mas posso encerrar manualmente)? = while True + break
+
+# avaliação
+# usado sem entender while = falta de dominio da logica
+# usado por preguiça de escrever a condição = desatenção ou habito ruim
+
+# BINGO
+# aula - teoria, uso + codigo e exercicio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
