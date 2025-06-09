@@ -21,16 +21,34 @@ def converterCSVtoHTML(arq_csv, arq_html):
         for linha in data:
             tabela += '         <tr>\n'
             for elemento in linha:
+                if elemento == '1':
+                    elemento += '⚠️'
+                elif elemento >= '2':
+                    elemento += '✅'
+                elif elemento == '0':
+                    elemento += '❌'
+                elif elemento == cell:
+                    elemento += cell
+                    elemento += titulo
+
                 tabela +=  f'           <td>{elemento}</td>\n'
             tabela += '         </tr>\n'
         tabela += '     </table>'
 
 
         with open(arq_html, 'w', encoding='utf-8') as pagina_html:
-            pagina_html.write(f"<!DOCTYPE html\n"
+            pagina_html.write(f"<!DOCTYPE html>\n"
                               f"<html>\n"
                               f"<head>\n"
                               f"<title>Status das Esteiras</title>\n"
+                              """
+                              <style>
+                                body { font-family: Arial; background-color: #f4f4f4; padding: 20px; }
+                                h1 { text-align: center; color: #333; }
+                                table { width: 80%; margin: auto; border-collapse: collapse; }
+                                th, td { padding: 12px; text-align: center; border: 1px solid #ccc; }
+                              </style>
+                              """
                               f"</head>\n"
                               f"<body>\n"
                               f"<h1><strong>Status das Esteiras - Monitoramento de Estoque</strong></h1>\n"
