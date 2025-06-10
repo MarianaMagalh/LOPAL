@@ -27,9 +27,6 @@ def converterCSVtoHTML(arq_csv, arq_html):
                     elemento += '✅'
                 elif elemento == '0':
                     elemento += '❌'
-                elif elemento == cell:
-                    elemento += cell
-                    elemento += titulo
 
                 tabela +=  f'           <td>{elemento}</td>\n'
             tabela += '         </tr>\n'
